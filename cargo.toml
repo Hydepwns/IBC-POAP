@@ -1,0 +1,21 @@
+[package]
+name = "poap_contract"
+version = "0.1.0"
+authors = ["MF_DROO"]
+edition = "2018"
+description = "POAP Smart Contract"
+
+[dependencies]
+cosmwasm_std = "0.14.0"
+secret_toolkit = "0.14.0"
+
+[dependencies.libc]
+version = "0.2.97"
+optional = true
+
+[features]
+default = ["std"]
+std = ["cosmwasm_std/std", "secret_toolkit/std", "libc"]
+
+[workspace]
+members = ["."]
