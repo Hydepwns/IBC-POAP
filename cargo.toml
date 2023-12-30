@@ -1,9 +1,9 @@
 [package]
-name = "poap_contract"
+name = "ibc-poap"
 version = "0.1.0"
 authors = ["MF_DROO"]
-edition = "2018"
-description = "POAP Smart Contract"
+edition = "2023"
+description = "IBC-POAP, POAP.xyz sold out, so here I am."
 
 [dependencies]
 cosmwasm_std = "0.14.0"
