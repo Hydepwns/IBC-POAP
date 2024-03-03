@@ -8,6 +8,13 @@ pub struct MintMsg {
     pub event_id: String,
     pub recipient: String,
     pub metadata: String,
+    pub minting_rule: MintingRule,
+}
+
+pub enum MintingRule {
+    ByMinter { minter: String },
+    ByKey { pubkey: String, signature: String },
+    ByKeys { pubkey: Vec<String>, signature: String },
 }
 
 pub struct BurnMsg {
